@@ -1,42 +1,113 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+label {
+  float: left;
+  margin-bottom: 15px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+button {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  align-self: center;
+  width: 100px;
+}
+
+input {
+  margin-left: 15px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+
+textarea {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin: 0 0 25px 0;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  background-color: #1e40af;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-family: "Roboto-mono", sans-serif;
+}
+
+.formSection > h3 {
+  border-bottom: 1px solid;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
+  background-color: #e5e7eb;
+  padding: 0px 15px;
+  gap: 15px;
+  font-family: "Roboto-mono", sans-serif;
+}
+
+.left-info,
+.right-info {
+  padding: 10px 25px;
+}
+
+.left-info {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.experience-section {
+  background-color: #f3f4f6;
+  padding: 15px 25px;
+  font-family: "Roboto", sans-serif;
+}
+
+.education-output > :first-child {
+  font-weight: 500;
+}
+
+.work-output > :first-child {
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  #root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  button {
+    width: 150px;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  form {
+    flex-direction: row;
+    gap: 25px;
   }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .contact-output {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+  }
 }
