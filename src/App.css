@@ -52,6 +52,10 @@ h2 {
   border-bottom: 1px solid;
 }
 
+.right-section {
+  max-width: 600px;
+}
+
 .contact-section {
   display: flex;
   flex-direction: row;
@@ -109,5 +113,9 @@ h2 {
     flex-direction: row;
     align-items: center;
     gap: 25px;
+  }
+
+  .right-section {
+    max-width: 1280px;
   }
 }
